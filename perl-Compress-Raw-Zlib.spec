@@ -1,6 +1,7 @@
 Name:           perl-Compress-Raw-Zlib
+Epoch:          1
 Version:        2.061
-Release:        1%{?dist}
+Release:        4%{?dist}
 Summary:        Low-level interface to the zlib compression library
 License:        GPL+ or Artistic
 Group:          Development/Libraries
@@ -61,6 +62,18 @@ make test
 %{_mandir}/man3/Compress::Raw::Zlib.3pm*
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1:2.061-4
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1:2.061-3
+- Mass rebuild 2013-12-27
+
+* Wed Nov 13 2013 Petr Pisar <ppisar@redhat.com> - 1:2.061-2
+- Increase release number not to conflict with older builds (bug #1029479)
+
+* Wed Nov 13 2013 Petr Pisar <ppisar@redhat.com> - 1:2.061-1
+- Increase epoch to 1 to allow upgrade from previous distribution (bug #1029479)
+
 * Mon May 27 2013 Paul Howarth <paul@city-fan.org> - 2.061-1
 - Update to 2.061
   - Include zlib 1.2.8 source
